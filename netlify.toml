@@ -1,0 +1,11 @@
+# netlify.toml
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# utile si tu utilises une SPA (React/Vite/Vue)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
